@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="imagetoolbar" content="no">
+		<meta name="msthemecompatible" content="no">
+		<meta name="cleartype" content="on">
+		<meta name="HandheldFriendly" content="True">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="format-detection" content="address=no">
+		<meta name="google" value="notranslate">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<link rel="manifest" href="./assets/icons/manifest.json">
+		<meta name="application-name" content="">
+		<meta name="msapplication-tooltip" content="">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/mstile-large.png">
+		<meta name="msapplication-tap-highlight" content="no">
+		<meta name="msapplication-square70x70logo" content="/mstile-small.png">
+		<meta name="msapplication-square150x150logo" content="/mstile-medium.png">
+		<meta name="msapplication-wide310x150logo" content="/mstile-wide.png">
+		<meta name="msapplication-square310x310logo" content="/mstile-large.png">
+		<title>Hvoinui kvartal</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="csrf-token" content="{{csrf_token()}}">
+		<link href="./assets/styles/app.min.css" rel="stylesheet">
+		<link link href="https://fonts.googleapis.com/css?family=Fira+Sans:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Playfair+Display:400,400i,700,700i,900,900i&amp;amp;subset=cyrillic"
+			rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="./assets/slick/slick.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDObzF8A8Vqz2T9AsISL_wkI8EmpjFzpRE"></script>
+		<!--<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>-->
+	</head>
+
+	<body>
+		<div class="hvoinui">
+			<div class="hvoinui__header">
+				<div class="hvoinui__content hvoinui__content_flex">
+					<img src="./assets/images/logo-hvoinui.svg" class="hvoinui__logo" alt="" />
+					<div class="hvoinui__nav">
+						<ul class="hvoinui__nav-list">
+							<li class="hvoinui__nav-list-item">
+								<a href="#about" class="hvoinui__nav-list-item hvoinui__nav-list-item_link">о комплексе</a>
+							</li>
+							<li class="hvoinui__nav-list-item">
+								<a href="#plans" class="hvoinui__nav-list-item hvoinui__nav-list-item_link">планы домов</a>
+							</li>
+							<li class="hvoinui__nav-list-item">
+								<a href="#tech-description" class="hvoinui__nav-list-item hvoinui__nav-list-item_link">тех.характеристики</a>
+							</li>
+							<li class="hvoinui__nav-list-item">
+								<a href="#gallery" class="hvoinui__nav-list-item hvoinui__nav-list-item_link">галерея</a>
+							</li>
+							<li class="hvoinui__nav-list-item">
+								<a href="#map" class="hvoinui__nav-list-item hvoinui__nav-list-item_link">инфраструктура</a>
+							</li>
+						</ul>
+						<div class="hvoinui__nav-mobile">
+							<p class="hvoinui__banner-location">Обуховский район, ул. Придорожная, 22</p>
+							<a href="tel:+380674015310" class="hvoinui__banner-phone">+380 (67) 401-53-10</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hvoinui__banner">
+				<div class="hvoinui__banner-left"></div>
+				<div class="hvoinui__content">
+					<div class="hvoinui__banner-main">
+						<h1 class="hvoinui__banner-title js-box">Хвойный Квартал</h1>
+						<div class="hvoinui__banner-caption js-box">КОТТЕДЖНЫЙ ГОРОДОК 26 КМ ОТ ЦЕНТРА КИЕВА</div>
+						<ul class="hvoinui__banner-list">
+							<li class="hvoinui__banner-list-item js-box">8 полностью готовых коттеджей</li>
+							<li class="hvoinui__banner-list-item js-box">высокий уровень комфорта</li>
+							<li class="hvoinui__banner-list-item js-box">высококачественные материалы</li>
+						</ul>
+						<div class="hvoinui__banner-cta">заказать просмотр</div>
+					</div>
+					<div class="hvoinui__banner-contact">
+						<p class="hvoinui__banner-location js-box">Обуховский район, г. Козин, ул. Придорожная, 22</p>
+						<a href="tel:+380674015310" class="hvoinui__banner-phone js-box">+380 (67) 401-53-10</a>
+					</div>
+				</div>
+				<div class="hvoinui__banner-right js-right">
+					<img src="./assets/images/1.jpg" class="hvoinui__banner-image" alt="" />
+				</div>
+			</div>
+			<a name="about" class="hvoinui__name"></a>
+			<div class="hvoinui__description">
+				<div class="hvoinui__content hvoinui__content_flex">
+					<div class="hvoinui__description-left js-left">
+						<div class="hvoinui__block-flex">
+							<h2 class="hvoinui__block-title hvoinui__block-title_1">О
+								<br/> комплексе</h2>
+							<p class="hvoinui__text">Вам предлагают вложить деньги в строительство дома? У нас есть вариант лучше – в продажу выставлены коттеджи, полностью
+								готовые к эксплуатации с высоким стандартом загородной жизни. Вам не нужно представлять, что будет – просто посмотрите,
+								что уже есть. ЖК «Хвойный» построен в единой архитектурной концепции, объединен живописной улицей, прекрасное место
+								для круглогодичного проживания. Мы постарались учесть все требования к идеальному дому. Близость городской черты,
+								элитное окружение а также удобное транспортное сообщение привлекает самых взыскательных покупателей.</p>
+						</div>
+						<img src="./assets/images/2.jpg" class="hvoinui__description-image" alt="" />
+					</div>
+					<div class="hvoinui__description-right">
+						<ul class="hvoinui__description-list">
+							<li class="hvoinui__description-list-item js-box">100% готовность</li>
+							<li class="hvoinui__description-list-item js-box">высокий уровень комфорта</li>
+							<li class="hvoinui__description-list-item js-box">экология</li>
+							<li class="hvoinui__description-list-item js-box">всего 8 коттеджей</li>
+							<li class="hvoinui__description-list-item js-box">престиж</li>
+							<li class="hvoinui__description-list-item js-box">эстетический рай</li>
+							<li class="hvoinui__description-list-item js-box">функциональная планировка</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<a name="plans" class="hvoinui__name"></a>
+			<div class="hvoinui__plans">
+				<div class="hvoinui__content">
+					<div class="hvoinui__block-flex">
+						<h2 class="hvoinui__block-title hvoinui__block-title_2">Планировки
+							<br/> домов</h2>
+						<p class="hvoinui__text">Все коттеджи выполнены в стиле минимализма и конструктивизма, с элементами экологического авангарда и HI-TEKA, с использованием
+							натуральных материалов. Все материалы сертифицированы.
+							<br /> Коттедж расположен в одном уровне и представляет собой: открытую фасадную террасу, входную группу с выходом в гаражный
+							блок и техническое помещение, гардеробную с просторным бытовым помещением, гостевой санузел, гостиную совмещенную
+							со столовой, мастер- спальню с санузлом и гардеробной, 2 спальни с гардеробными и общим санузлом, закрытую террасу
+							с зоной барбекю, гаражный блок на одно авто и крытую площадку на несколько машин.</p>
+					</div>
+					<div class="hvoinui__plans-block">
+						<div class="hvoinui__plans-card">
+							<img src="./assets/images/3.jpg" class="hvoinui__plans-image js-left" alt="" />
+							<div class="hvoinui__plans-description hvoinui__plans-description_1 js-right">
+								<h3 class="hvoinui__plans-description-title">Дом 1</h3>
+								<p class="hvoinui__plans-description-text hvoinui__plans-description-text_bold">Дома сдаются с полной отделкой!</p>
+								<p class="hvoinui__plans-description-text hvoinui__plans-description-text_bold">
+									<span class='hvoinui__plans-description-text_normal'> Площадь дома </span> - 240м2</p>
+								<p class="hvoinui__plans-description-text hvoinui__plans-description-text_bold">
+									<span class='hvoinui__plans-description-text_normal'> Высота потолков </span> - 3м</p>
+								<p class="hvoinui__plans-description-text hvoinui__plans-description-text_bold">
+									<span class='hvoinui__plans-description-text_normal'> Отопление </span> - радиаторы и полы с подогревом</p>
+								<p class="hvoinui__plans-description-text hvoinui__plans-description-text_bold">
+									<span class='hvoinui__plans-description-text_normal'> Полы </span> - кафель и массив дерева ..</p>
+								<p class="hvoinui__plans-description-text hvoinui__plans-description-text_bold">
+									<span class='hvoinui__plans-description-text_normal'> Сантехника </span> фирмы "Toto" (Япония)</p>
+							</div>
+						</div>
+						<div class="hvoinui__plans-card">
+							<div class="hvoinui__plans-description hvoinui__plans-description_2 js-left">
+								<h3 class="hvoinui__plans-description-title">Дом 2</h3>
+								<p class="hvoinui__plans-description-text hvoinui__plans-description-text_bold">Дома сдаются с полной отделкой!</p>
+								<p class="hvoinui__plans-description-text hvoinui__plans-description-text_bold">
+									<span class='hvoinui__plans-description-text_normal'> Площадь дома </span> - 240м2</p>
+								<p class="hvoinui__plans-description-text hvoinui__plans-description-text_bold">
+									<span class='hvoinui__plans-description-text_normal'> Высота потолков </span> - 3м</p>
+								<p class="hvoinui__plans-description-text hvoinui__plans-description-text_bold">
+									<span class='hvoinui__plans-description-text_normal'> Отопление - </span> радиаторы и полы с подогревом</p>
+								<p class="hvoinui__plans-description-text hvoinui__plans-description-text_bold">
+									<span class='hvoinui__plans-description-text_normal'> Полы </span> - кафель и массив дерева ..</p>
+								<p class="hvoinui__plans-description-text hvoinui__plans-description-text_bold">
+									<span class='hvoinui__plans-description-text_normal'> Сантехника </span> фирмы "Toto" (Япония)</p>
+							</div>
+							<img src="./assets/images/4.jpg" class="hvoinui__plans-image js-right" alt="" />
+						</div>
+					</div>
+					<div class="hvoinui__banner-cta hvoinui__banner-cta_center">получить все планировки</div>
+				</div>
+			</div>
+			<a name="tech-description" class="hvoinui__name"></a>
+			<div class="hvoinui__tech-description">
+				<div class="hvoinui__content">
+					<h2 class="hvoinui__block-title hvoinui__block-title_3">технические
+						<br/> характеристики</h2>
+					<div class="hvoinui__tech-block">
+						<h3 class="hvoinui__tech-description-title">Строительные материалы</h3>
+						<div class="hvoinui__tech-description-block">
+							<p class="hvoinui__tech-description-card hvoinui__tech-description-card_1 js-box">
+								<span class='hvoinui__tech-description-card_bold'> Стены: </span> маячная штукатурка, трехслойная покраска</p>
+							<p class="hvoinui__tech-description-card hvoinui__tech-description-card_2 js-box">
+								<span class='hvoinui__tech-description-card_bold'> Двери: </span> алюминиевый профиль + стекло</p>
+							<p class="hvoinui__tech-description-card hvoinui__tech-description-card_3 js-box">
+								<span class='hvoinui__tech-description-card_bold'> Окна: </span> 5-ти камерный алюминиевый профиль (производство Италия)</p>
+							<p class="hvoinui__tech-description-card hvoinui__tech-description-card_4 js-box">
+								<span class='hvoinui__tech-description-card_bold'> Газификация: </span> автономная ГРП на коттеджный городок</p>
+							<p class="hvoinui__tech-description-card hvoinui__tech-description-card_5 js-box">
+								<span class='hvoinui__tech-description-card_bold'> Электричество: </span> мощность до 15 кВт на каждый коттедж, автономная ветка на КГ</p>
+							<p class="hvoinui__tech-description-card hvoinui__tech-description-card_6 js-box">
+								<span class='hvoinui__tech-description-card_bold'> Канализация: </span> каскадная система септиков с принудительной аэрацией и датчиком на заполнение, GSM модуль с
+								смс уведомлением</p>
+							<p class="hvoinui__tech-description-card hvoinui__tech-description-card_7 js-box">
+								<span class='hvoinui__tech-description-card_bold'> Вентиляция: </span> центральная система кондиционирования ,принудительная приточно-вытяжная система</p>
+							<p class="hvoinui__tech-description-card hvoinui__tech-description-card_8 js-box">
+								<span class='hvoinui__tech-description-card_bold'> Водоснабжение: </span> отдельные линии для питьевой воды (артезианская скважина, глубиной 77 м , система водоочитстки)
+								и для технической воды</p>
+							<p class="hvoinui__tech-description-card hvoinui__tech-description-card_9 js-box">
+								<span class='hvoinui__tech-description-card_bold'> Отопление: </span> газовый экономичный котел VIESSMANN (производство Германия), полы с водяным подогревом (гибкая
+								бесшовная труба, система без стыков), возможность установки камина</p>
+							<p class="hvoinui__tech-description-card hvoinui__tech-description-card_10 js-box">
+								<span class='hvoinui__tech-description-card_bold'> Полы: </span> керамическое покрытие ,натуральная массив смереки, покрытый воском (ОSМO), установленный на фанерное
+								основание (производство Украина)</p>
+							<p class="hvoinui__tech-description-card hvoinui__tech-description-card_11 js-box">
+								<span class='hvoinui__tech-description-card_bold'> Радиаторы: </span> металл (производство Австрия)</p>
+							<p class="hvoinui__tech-description-card hvoinui__tech-description-card_12 js-box">
+								<span class='hvoinui__tech-description-card_bold'> Проводка: </span> медь</p>
+						</div>
+						<h3 class="hvoinui__tech-description-title">Внутренняя Отделка</h3>
+						<div class="hvoinui__tech-description-block">
+							<p class="hvoinui__tech-description-card hvoinui__tech-description-card_romb js-box">
+								<span class='hvoinui__tech-description-card_bold'> Система кондиционирования: </span> разведена и предполагает установку 2 сплитсистем</p>
+							<p class="hvoinui__tech-description-card hvoinui__tech-description-card_romb js-box">
+								<span class='hvoinui__tech-description-card_bold'> Электрофурнитура: </span> электророзетки , выключатели SHnaider (производства Австрия)</p>
+							<p class="hvoinui__tech-description-card hvoinui__tech-description-card_romb js-box">
+								<span class='hvoinui__tech-description-card_bold'> Интернет, телевидение: </span> оптико-волоконный высокоскоростной интернет , WI FI , адаптированный ТV пакет</p>
+							<p
+								class="hvoinui__tech-description-card hvoinui__tech-description-card_romb js-box">
+								<span class='hvoinui__tech-description-card_bold'> Сантехническое оборудование: </span> компакт, раковина, биде , ТОТО (производство JAPAN), душевая кабина , смесители
+								Hansgroe (производство Германия), гидро-массажная душевая кабинa, электрические радиаторы (производство Австрия)</p>
+								<p
+									class="hvoinui__tech-description-card hvoinui__tech-description-card_romb js-box">
+									<span class='hvoinui__tech-description-card_bold'> Санузлы: </span> керамическая плитка, каленое декоративное стекло</p>
+									<p class="hvoinui__tech-description-card hvoinui__tech-description-card_romb js-box">
+										<span class='hvoinui__tech-description-card_bold'> Мебель: </span> дом полностью укомплектован мебелью и предметами интерьера (название, наименование)</p>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+			<a name="gallery" class="hvoinui__name"></a>
+			<div class="hvoinui__gallery">
+				<div class="hvoinui__content">
+					<h2 class="hvoinui__block-title hvoinui__block-title_4">Наша
+						<br/> Галерея</h2>
+					<div class="hvoinui__slider js-right js-slick">
+						<img src="./assets/images/hk-gallery-1.jpg" class="hvoinui__slider-item" alt="" />
+						<img src="./assets/images/hk-gallery-2.jpg" class="hvoinui__slider-item" alt="" />
+						<img src="./assets/images/hk-gallery-3.jpg" class="hvoinui__slider-item" alt="" />
+						<img src="./assets/images/hk-gallery-4.jpg" class="hvoinui__slider-item" alt="" />
+						<img src="./assets/images/hk-gallery-5.jpg" class="hvoinui__slider-item" alt="" />
+						<img src="./assets/images/hk-gallery-6.jpg" class="hvoinui__slider-item" alt="" />
+						<img src="./assets/images/hk-gallery-7.jpg" class="hvoinui__slider-item" alt="" />
+						<img src="./assets/images/hk-gallery-8.jpg" class="hvoinui__slider-item" alt="" />
+						<img src="./assets/images/hk-gallery-9.jpg" class="hvoinui__slider-item" alt="" />
+						<img src="./assets/images/hk-gallery-10.jpg" class="hvoinui__slider-item" alt="" />
+						<img src="./assets/images/hk-gallery-11.jpg" class="hvoinui__slider-item" alt="" />
+					</div>
+				</div>
+			</div>
+			<a name="map" class="hvoinui__name"></a>
+			<div class="hvoinui__map">
+				<div class="hvoinui__content">
+					<h2 class="hvoinui__block-title hvoinui__block-title_5">Удобная
+						<br/> Инфраструктура</h2>
+					<div class="hvoinui__map-content-list">
+						<div class="hvoinui__map-content-item js-box">Рядом с КГ находится сеть комлексов для отдыха и развлечений (QUEEN country club, GIARDINO тд.), рестораны (ТАНДЫР
+							ПОДКОВА ПЛАТИУМ купеческий двор и тд.) , супермаркеты (FaVORE, мЕГАМАРКЕТ) , теннисные корты , конно- развлекательный
+							комплекс , оборудованная пляжная территория , прогулочные зоны , велодорожки ,спортивный клуб sportlife , частная
+							медицинская клиника, англоязычный детский сад play room ,частная школа atlantis</div>
+						<div class="hvoinui__map-content-item js-box">Территория городка находится под круглосуточной централизованной охранной сигнализацией (экипажи группы реагирования
+							находятся в непосредственной близости от кг), въезд на территорию кг возможен с двух сторон и закрыт шлагбаумами с
+							электронными ключами доступа.</div>
+						<div class="hvoinui__map-content-item js-box">Освещение территории кг централизованное , представляет собой систему современного оборудования с сумеречными датчиками
+							и мощными LED светильниками.</div>
+						<div class="hvoinui__map-content-item js-box">Территория кг ограждена комбинированным забором , внешняя часть - шумопоглащающая , высотой около 5,5 м , внутренняя
+							часть - представляет собой декоративный деревянный забор , каждый участок оборудован электрическими откатными воротами
+							с дистанционным управлением.</div>
+					</div>
+				</div>
+				<div class="hvoinui__map-right js-right">
+					<div id="map" class="hvoinui__map-init"></div>
+				</div>
+			</div>
+			<div class="hvoinui__dignity">
+				<div class="hvoinui__content">
+					<h2 class="hvoinui__block-title hvoinui__block-title_6">Наши
+						<br/> достоинства</h2>
+					<ul class="hvoinui__dignity-block">
+						<li class="hvoinui__dignity-block-item js-box">элитный район</li>
+						<li class="hvoinui__dignity-block-item js-box">экологически чистое место</li>
+						<li class="hvoinui__dignity-block-item js-box">100% готовность (дома введены в эксплуатацию)</li>
+						<li class="hvoinui__dignity-block-item js-box">никаких инвестиций</li>
+						<li class="hvoinui__dignity-block-item js-box">документами о частной собственности</li>
+						<li class="hvoinui__dignity-block-item js-box">всего 1,5 км от черты города (до центра 20 мин)</li>
+					</ul>
+				</div>
+			</div>
+			<div class="hvoinui__video">
+				<div class="hvoinui__content">
+					<h2 class="hvoinui__block-title hvoinui__block-title_7">Съемка
+						<br/> с квадрокоптера</h2>
+					<div class="hvoinui__youtube-video js-block">
+						<iframe class="hvoinui__youtube" width="69%" height="100%" src="https://www.youtube.com/embed/ZqpAX8SCesg?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1"
+							frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="hvoinui__form">
+				<div class="hvoinui__content hvoinui__content_flex-center">
+					<div class="hvoinui__form-block js-block">
+						<h3 class="hvoinui__form-title">запишитесь на просмотр</h3>
+						<div class="hvoinui__form-content">
+							<input placeholder="Ваше имя" class="hvoinui__form-input" type="text" />
+							<input placeholder="Ваш e-mail" class="hvoinui__form-input" type="text" />
+							<input placeholder="Ваш номер телефона" class="hvoinui__form-input" type="text" />
+							<button class="hvoinui__form-button">заказать просмотр</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hvoinui__footer">
+				<div class="hvoinui__content">
+					<p class="hvoinui__banner-location">Обуховский район, ул. Придорожная, 22</p>
+					<a href="tel:+380674015310" class="hvoinui__banner-phone">+380 (67) 401-53-10</a>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="./assets/scripts/app.min.js"></script>
+
+</html>
